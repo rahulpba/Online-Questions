@@ -14,14 +14,17 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
+        <header>
+            <img src="./images/eyLogo.png" alt="" class="logo" />
+        </header>
         <div class="questions_page">
             <div class="questions">
                 <h1>Knowledge check questions:</h1>
-                <p>
+                <p id="currentQuestion">
                     <span>1.</span>
                     Which ONE statements are true:
                 </p>
-                <ul>
+                <ul id="currentQuestionOptions">
                     <li>
                         <input
                             type="checkbox"
@@ -40,7 +43,7 @@
                             type="checkbox"
                             id="question_1_2"
                             name="question_1"
-                            value="A"
+                            value="B"
                         />
                         <div class="checkbox"></div>
                         <label for="question_1_2"
@@ -53,7 +56,7 @@
                             type="checkbox"
                             id="question_1_3"
                             name="question_1"
-                            value="A"
+                            value="C"
                         />
                         <div class="checkbox"></div>
                         <label for="question_1_3"
@@ -63,12 +66,12 @@
                     </li>
                     <li>
                         <input
-                            type="checkbox"
+                            type="radio"
                             id="question_1_4"
                             name="question_1"
-                            value="A"
+                            value="D"
                         />
-                        <div class="checkbox"></div>
+                        <div class="radio"></div>
                         <label for="question_1_4"
                             ><span>D.</span>Lorem Ipsum has been the industry's
                             standard dummy text ever since the 1500s.</label
@@ -81,5 +84,6 @@
                 <a href="#" class="right"></a>
             </div>
         </div>
+        <script src="./js/questions.js"></script>
     </body>
 </html>

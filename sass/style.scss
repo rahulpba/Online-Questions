@@ -150,6 +150,45 @@ h1 {
 		clip-path: polygon(100% 100%, 100% 0%, 96% 96%, 0% 100%);
 	}
 }
+.results_page {
+	height: 100vh;
+	position: relative;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/Background-result.png);
+	padding: 82px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100px;
+		background-color: yellow;
+		clip-path: polygon(0% 0%, 100% 0%, 10% 10%, 0% 100%);
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		height: 50vh;
+		background-color: yellow;
+		clip-path: polygon(100% 100%, 100% 0%, 96% 96%, 0% 100%);
+	}
+	h1 {
+		font-family: "Satisfy", cursive;
+	}
+	p {
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 14px;
+		max-width: 450px;
+	}
+}
 .objectives {
 	max-width: 450px;
 	width: 100%;
@@ -219,6 +258,9 @@ h1 {
 			margin-bottom: 20px;
 			line-height: 28px;
 			padding-left: 35px;
+			label {
+				cursor: pointer;
+			}
 			position: relative;
 			display: flex;
 			align-items: flex-start;
@@ -287,4 +329,12 @@ h1 {
 			transition: 0.3s ease all;
 		}
 	}
+}
+.logo {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 46px;
+	height: 46px;
+	z-index: 2;
 }
